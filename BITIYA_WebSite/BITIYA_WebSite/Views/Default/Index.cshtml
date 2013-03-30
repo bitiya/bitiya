@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="MainContent">
+
+<div id="banner">
+    <img src="~/Content/Images/banner_1.png" />
+</div>
+<div id="upcomig_main">
+    <div id="upcomig_left">
+    </div>
+    <div id="upcoming_center">
+        <p class="heading">
+            Walkathon in Holmdel</p>
+        <p class="main_content">
+            Walkathon was a great success ! we had numerous people turned out to support and
+            walk with us for the cause. People felt motivated, came forward to help and contribute.
+            Thanks everyone for showing up, some photos <a href="@Url.Action("Index", "Gallery")" title="Gallery" target="_self"
+                class="content_nav"> here.</a>
+            <br />
+        </p>
+        
+    </div>
+    <div id="upcomig_right">
+    </div>
+</div>
+<div id="bottom_coloum_main">
+    <div class="bottom_coloum">
+        <div class="bottom_left">
+        </div>
+        <div class="bottom_middle">
+            <img alt="ppes" src="~/Content/Images/ppes.png" width="164" height="39" class="upcoming" />
+            <img alt="ppesImage" src="~/Content/Images/Img1.png" width="277" height="155" class="img1" />
+            <p class="text_coloum">
+                Pardada Pardadi Educational Society. A project in partnership to give girls the gift of education , 
+                thus ending a generation of illiteracy.                                
+                @Html.ActionLink("More....", "ppes", "Projects", null, new { @class = "content_nav" })
+            </p>
+        </div>
+        <div class="bottom_right">
+        </div>
+    </div>
+    
+    <div class="bottom_coloum" style="margin-left: 2px;">
+        <div class="bottom_left">
+        </div>
+        <div class="bottom_middle">
+            <p>
+                <img alt="bitiya vikas" src="~/Content/Images/bitya_vikas.png" width="164" height="39" class="upcoming" /></p>
+                <img alt="image" src="~/Content/Images/Img2.png" width="273" height="155" class="img1" />
+            <p class="text_coloum">
+                Brick by brick, help us build a vocational training school for girls to provide
+                training on computers, embroidery, sewing, beauty, etc. 
+                @Html.ActionLink("More....", "bvk", "Projects", null, new { @class = "content_nav" })
+            </p>
+        </div>
+        <div class="bottom_right">
+        </div>
+    </div>
+</div>
+</div>
